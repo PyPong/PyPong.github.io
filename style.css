@@ -1,0 +1,85 @@
+#pypong{
+	color:#000;
+	font-size:60px;
+	position:absolute;
+	top:120px;
+	left:100px;
+	font-family:Arial;
+}
+
+#info{
+	font-size:20px;
+	position:absolute;
+	top:40%;
+	left:10%;
+	font-family:Arial;
+	color:#262626;
+}
+
+#img1{
+	position:absolute;
+	top:17%;
+	right:10%;
+	border:3px solid #000;
+	width:640px;
+	height:480px;
+}
+
+.sidebar{
+	font-size:23px;
+}
+
+#home{
+	color:#025886;
+	left:43px;
+	position:absolute;
+}
+
+#News{
+	color:#025886;
+	left:48%;
+	position:absolute;
+}
+
+#Download{
+	color:#025886;
+	left:243px;
+	position:absolute;
+	left:10%;
+}
+
+#OldVersion{
+	color:#025886;
+	left:343px;
+	position:absolute;
+	top:90%;
+	left:42px;
+}
+
+#DownloadButton{
+	text-decoration: none;
+	font-size:26px;
+	color:#FFF;
+	position:absolute;
+	top:70%;
+	left:21%;
+	background:#323232;
+	border-radius:3px;
+	padding: 12px 31px;
+	font-family:Arial;
+}
+
+#plate{
+	position:relative;
+	top:40px;
+}
+
+#buttonLang{
+	color:#000;
+	position:absolute;
+	font-size:18px;
+	font-family:Arial;
+	top:92%;
+	left:95%;
+	text-decoration: none;
+}
