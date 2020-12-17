@@ -2,11 +2,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 body{
 	background: #f4f6f6;
-	font-family: Arial;
+	font-family: "Arial";
+ 	src: url("Fonts/Arial.ttf") format("ttf")
 }
 
 /*Меню сайта*/
-/*Кнопки меню*/
 .ui{
 	list-style: none;
 	margin-top:-8px;
@@ -77,6 +77,7 @@ h1{
 	color: #1c2833;
 	margin-right:auto;
 	margin-left:auto;
+	/*white-space:nowrap;*/
 }
 
 /*Ссылка в нутри текста*/
@@ -88,6 +89,7 @@ h1{
 	color: #283747;
 	text-decoration:none;
 }
+
 /*Кнопка скачать*/
 .downloadButton{
 	border-radius: 5px;
