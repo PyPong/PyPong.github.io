@@ -1,17 +1,21 @@
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
-
-body{
-	background: #f4f6f6;
-	font-family: "Arial";
- 	src: url("Fonts/Arial.ttf") format("ttf")
+@font-face{
+	font-family: AGENCYB;
+	src: url('../Fonts/AGENCYB.ttf');
 }
 
-/*Меню сайта*/
+html, body{
+	background: #d9d9d9;
+	margin: 0px;
+	padding: 0px;
+}
+
 .ui{
 	list-style: none;
 	margin-top:-8px;
 	display:flex;
+	height:45px;
 	justify-content:center;
+	background: #0E2426;
 }
 
 .li{
@@ -19,98 +23,43 @@ body{
 	display:flex;
 }
 .a{
-	color:#3498db;
-	font-size: 17px;
+	color:#ECF0F1;
+	background: #0E2426;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: 550;
 	padding:0px 15px;
+	text-align: center;
 	line-height:50px;
 	text-decoration: none;
-	-moz-transition: all 0.3s 0.01s ease;
-	-o-transition: all 0.3s 0.01s ease;
-	-webkit-transition: all 0.3s 0.01s ease;
 	
 }
 .a:hover{
-	border-bottom:3px solid;
-}
-/*Отделительная черта*/
-hr{
-	width: calc(100% - (-58px));
-	margin-left: -50px;
-	margin-top:-16px;
-	border: none;
-	background:#e5e7e9;
-	height: 2px;
-	-moz-transition: all 0.0001s 0.0001s ease;
-	-o-transition: all 0.0001s 0.0001s ease;
-	-webkit-transition: all 0.0001s 0.0001s ease;
-
-}
-/*Подчеркивание выбраного пункта меню*/
-#Main{
-	border-bottom:3px solid;
-}
-/*Надпись PyPong*/
-h1{
-	text-align:center;
-	font-size:42px;
-	color:#FFF;
-	position:absolute;
-	left:50%; 
-	transform: translatex(-50%);
-	top:125px;
+	text-decoration: underline;
 }
 
-/*Фон за надписью*/
-.round {
-	width: 15em;
-	height: 15em;
-	border-radius:100%;
-	background: #00b2ff;
-	margin-right: auto; 
-	margin-left: auto;
-}
-/*Текст/Информация*/
-.text{
-	text-align: center;
-	width:70%;
-	font-size: 20px;
-	color: #1c2833;
-	margin-right:auto;
-	margin-left:auto;
-	/*white-space:nowrap;*/
+.normal{
+	width: 100%;
+	background: #535e66;
+	position: relative;
+	top:-17px;
 }
 
-/*Ссылка в нутри текста*/
-#a{
-	color:#283747;
+.InfoClass{
+	font-size: 50px;
+	font-family: AGENCYB;
+	position: absolute;
+	color: #FFF;
+	top:40px;
+	left:40px;
 }
 
-#a:hover{
-	color: #283747;
-	text-decoration:none;
-}
-
-/*Кнопка скачать*/
-.downloadButton{
-	border-radius: 5px;
-	background:#00b2ff;
-	padding: 10px 15px;
-	text-decoration: none;
-	font-size:35px;
-	color:#FFF;
-	position:absolute;
-	left:49%;
-	top: 450px;
-	transform: translatex(-50%);
-	margin: 100px auto;
-}
-
-.img{
-	border:4px solid #00b2ff;
-	width:600px;
-	height:430px;
-	position:absolute;
-	left:49%;
-	top: 680px;
-	transform: translatex(-50%);
+.Info{
+	font-family: AGENCYB;
+	font-size: 30px;
+	width: 500px;
+	position: absolute;
+	color: #009fff;
+	top:100px;
+	right:40px;
 }
