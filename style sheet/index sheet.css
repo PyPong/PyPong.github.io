@@ -192,3 +192,102 @@ header .one-logo {
 	}
 }
 /* Раздел с информацией */
+
+/* Раздел со скачиванием */
+.download {
+	position: absolute;
+	padding-bottom: 40px;
+	width: 100%;
+	height: auto;
+
+	background: #95acde;
+}
+
+.download-info {
+	font-family: RobotoSlab;
+
+	text-align: center;
+}
+
+.download-info h1 {
+	position: relative;
+	top: 10px;
+
+	font-size: 40px;
+	font-weight: bold;
+
+	color: #ffffff;
+}
+
+.download-info h3 {
+	position: relative;
+	top: 20px;
+
+	font-size: 20px;
+	font-weight: bold;
+
+	color: #2d2d2d;
+}
+
+.download .download-all {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 350px;
+	top: 40px;
+	left: 10%;
+
+	text-align: center;
+	margin: 40px 10px;
+
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.download .download-all h2 {
+	margin-top: 10px;
+	font-family: RobotoSlab;
+	font-size: 30px;
+
+	font-weight: bold;
+	color: #2969f2;
+}
+
+.download .download-all p {
+	margin-top: 40px;
+	font-family: RobotoSlab;
+	font-size: 15px;
+
+	font-weight: normal;
+	color: #2d2d2d;
+}
+
+.download .download-all a {
+	font-family: RobotoSlab;
+	font-size: 18px;
+
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-weight: normal;
+	background: #2969f2;
+	color: #ffffff;
+}
+
+.download .download-all a:hover {
+	background: #2d2d2d;
+	color: #ffffff;
+}
+
+.download .download-all a:active {
+	background: #232323;
+	color: #878787;
+}
+
+.download .download-0-12 {
+	display: none;
+}
+
+.download .download-0-13 {
+	display: none;
+}
+/* Раздел со скачиванием */
