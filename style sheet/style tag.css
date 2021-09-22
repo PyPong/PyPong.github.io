@@ -1,0 +1,16 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: RobotoSlab;
+  src: url('../family/RobotoSlab.ttf');
+}
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url('../family/RobotoCondensed.ttf');
+}
+
+a {
+  text-decoration: none;
+}
+
+Рш
