@@ -140,10 +140,23 @@ header .one-logo {
 
 	padding: 20px 10px;
 
-	font-family: RobotoCondensed;
-	font-weight: bold;
-	font-size: 17px;
+	font-family: RobotoSlab;
+	font-weight: lighter;
+	line-height: 1.5;
+	font-size: 23px;
 	color: #1e1e1e;
+}
+
+.sec-info .right-align img {
+	position: relative;
+	width: 30%;
+	height: auto;
+	top: -265px;
+	right: 10%;
+
+	float: right;
+
+	border: 2px solid #000;
 }
 
 @media screen and (max-width: 700px) {
@@ -151,6 +164,31 @@ header .one-logo {
 		position: relative;
 
 		margin: 0px 0px;
+	}
+
+	.sec-info .info, .sec-info h2 {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 318px) {
+	.sec-info .info, .sec-info h2 {
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.sec-info .left-align {
+		position: relative;
+		width: 100%;
+		left: 0%;
+
+		text-align: center;
+	}
+
+	.sec-info .right-align img {
+		display: none;
 	}
 }
 /* Раздел с информацией */
