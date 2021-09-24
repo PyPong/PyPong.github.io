@@ -1,0 +1,67 @@
+/* Панель навигации */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  transition: height 0.5s ease, width 0.9s ease;
+
+  opacity: 0.9;
+  background: #000000;
+}
+
+nav li { position: relative; display: inline; top: 10px;}
+nav .document-nav { text-align: center; }
+
+@media screen and (min-width: 800px) {
+  nav a { color: #ffffff; text-decoration: none; margin: 0px 10px;}
+  nav a:hover { color: #4796FF; }
+  nav .open-nav:hover { color: #468FFF; }
+  nav .open-nav {
+    position: absolute;
+    text-align: right;
+    top: -5px;
+    right: 20px;
+
+    font-size: 30px;
+
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    height: 160px;
+
+    opacity: 0.7;
+  }
+  nav li { display: block; top: 0px;}
+  nav .open-nav {
+    position: relative;
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #ffffff;
+    cursor: pointer;
+  }
+  nav a { display: block; color: #ffffff; text-decoration: none; padding: 7px;}
+}
+/* Панель навигации */
+
+/* Header */
+header {
+  width: 100%;
+  height: 300px;
+
+  background: #1968E2;
+}
+/* Header */
