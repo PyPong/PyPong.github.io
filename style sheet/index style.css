@@ -26,9 +26,9 @@ nav .document-nav { text-align: center; }
   nav .open-nav:hover { color: #468FFF; }
   nav .open-nav {
     position: absolute;
-    text-align: right;
+    text-align: left;
     top: -5px;
-    right: 20px;
+    left: 20px;
 
     font-size: 30px;
 
@@ -41,7 +41,7 @@ nav .document-nav { text-align: center; }
   nav {
     height: 160px;
 
-    opacity: 0.7;
+    opacity: 0.8;
   }
   nav li { display: block; top: 0px;}
   nav .open-nav {
@@ -62,6 +62,141 @@ header {
   width: 100%;
   height: 300px;
 
-  background: #1968E2;
+  box-shadow: 0px 0px 50px #000000;
+  background: #2850b4;
+}
+
+header hgroup a { color: #ffffff; text-decoration: none; }
+header h1 {
+  position: relative;
+  top: 70px;
+
+  font-size: 70px;
+  font-family: RobotoSlab;
+
+  text-align: center;
+}
+header h2 {
+  position: relative;
+  top: 80px;
+
+  font-size: 14px;
+  font-family: RobotoSlab;
+
+  color: #ffffff;
+  text-align: center;
 }
 /* Header */
+
+/* Раздел с информацией */
+.info-section {
+  width: 100%;
+  height: 300px;
+
+  background: #c5c5c5;
+  box-shadow: 0px 0px 10px #000000;
+}
+.info-section .info-game {
+  position: relative;
+  width: 40%;
+  left: 10%;
+
+  font-family: RobotoSlab;
+  color: #1e1e1e;
+}
+.info-section .info-game h2 {
+  position: relative;
+  padding: 40px 0px;
+
+  font-size: 30px;
+}
+.info-section .info-game p {
+  position: relative;
+
+  font-size: 25px;
+}
+.info-section img {
+  position: relative;
+  float: right;
+
+  left: 100%;
+
+  width: 350px;
+
+}
+
+@media screen and (max-width: 1406px) {
+  .info-section .info-game {
+    width: 40%;
+    top: -30px;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .info-section .info-game {
+    width: 60%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .info-section .info-game {
+    width: 90%;
+    left: 5%;
+
+    text-align: center;
+  }
+
+  .info-section .info-game h2 {
+    font-size: 25px;
+  }
+  .info-section .info-game p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .info-section .info-game h2 {
+    font-size: 25px;
+    padding: 40px 0px 10px 0px;
+  }
+  .info-section .info-game p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 329px) {
+  .info-section .info-game {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+/* Раздел скачивания */
+.download-section {
+  width: 100%;
+  height: 450px;
+
+  box-shadow: 0px 0px 40px #6077d5;
+  background: linear-gradient(180deg, #6077d5, #4b6fff);
+}
+
+.download-section {
+
+}
+/* Раздел скачивания */
+
+/* Подвал */
+footer {
+  width: 100%;
+  height: 70px;
+
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  opacity: 0.9;
+  background: #000000;
+}
+/* Подвал */
