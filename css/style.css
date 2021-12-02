@@ -59,6 +59,7 @@ nav {
 	z-index: 999;
 
 	transition: height 0.5s ease, width 0.9s ease;
+	font-family: sans-serif;
 
 	opacity: 0.7;
 	background: #1c2741;
@@ -67,12 +68,12 @@ nav {
 nav .document-nav { 
 	position: relative;
 	top: 10px;
+
 	text-align: center;
 }
 
 nav .document-nav button {
 	font-size: 17px;
-	font-family: sans-serif;
 	font-weight: bold;
 
 	background: none;
@@ -81,8 +82,7 @@ nav .document-nav button {
 
 nav .open-nav button {
 	font-size: 30px;
-	font-weight: bold;
-	font-family: sans-serif;
+	font-weight: normal;
 
 	background: none;
 	color: #ffffff;
@@ -90,18 +90,10 @@ nav .open-nav button {
 
 
 @media screen and (min-width: 800px) {
-	snav a { 
+	nav a { 
 		color: #ffffff; 
-		text-decoration: none; 
-		margin: 0px 10px;
+		text-decoration: none;
 	}
-
-	snav a:hover { 
-		color: #4796FF; 
-
-		transition-property: color;
-		transition-duration: 0.1s;
- 	}
 
 	nav .document-nav button {
 		padding: 0px 10px;
@@ -119,23 +111,18 @@ nav .open-nav button {
 	nav .open-nav {
     	position: absolute;
     	text-align: left;
-    	top: -3px;
+    	top: 4px;
     	left: 20px;
 
     	font-size: 30px;
-    	font-family: sans-serif;
-    	font-weight: normal;
 
     	color: #ffffff;
     	cursor: pointer;
 	}
 
 	nav .open-nav button {
-	position: relative;
-	top: 7px;
-
-    	font-family: sans-serif;
-    	font-weight: 550;
+    font-family: sans-serif;
+    font-weight: normal;
 	}
 }
 
@@ -147,21 +134,20 @@ nav .open-nav button {
 	}
 
 	nav .document-nav { 
-		display: block; 
-		top: 0px;
-	}
-	
-	nav .open-nav {
 		position: relative;
 		top: 0px;
+
+		display: block; 
+	}
+
+	nav .open-nav {
+		position: relative;
+		top: -2px;
 
 		text-align: center;
   }
 
 	nav .open-nav button {
-		font-size: 30px;
-		top: 0px;
-
 		background: none;
 		color: #ffffff;
   }
