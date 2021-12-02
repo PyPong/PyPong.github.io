@@ -1,0 +1,173 @@
+/* Обнуление стилей */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*after{
+	-moz-box=siting: border-box;
+	-webkit-box-siting: border-box;
+	box-sizing: border-box;
+}
+:focus, active{outline: none;};
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::ms-clear{display: none;}
+button{coursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visisted{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* Подключение стилей  */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url('../fonts/RobotoCondensed.ttf');
+}
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url('../fonts/RobotoSlab.ttf');
+}
+
+/* Общие стили */
+
+
+/* Навигационное поле */
+nav {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	z-index: 999;
+
+	transition: height 0.5s ease, width 0.9s ease;
+
+	opacity: 0.7;
+	background: #1c2741;
+}
+
+nav .document-nav { 
+	position: relative;
+	top: 10px;
+	text-align: center;
+}
+
+nav .document-nav button {
+	font-size: 17px;
+	font-family: sans-serif;
+	font-weight: bold;
+
+	background: none;
+	color: #ffffff;
+}
+
+nav .open-nav button {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: sans-serif;
+
+	background: none;
+	color: #ffffff;
+}
+
+
+@media screen and (min-width: 800px) {
+	snav a { 
+		color: #ffffff; 
+		text-decoration: none; 
+		margin: 0px 10px;
+	}
+
+	snav a:hover { 
+		color: #4796FF; 
+
+		transition-property: color;
+		transition-duration: 0.1s;
+ 	}
+
+	nav .document-nav button {
+		padding: 0px 10px;
+	}
+
+	nav .document-nav button:hover, nav .open-nav button:hover {
+		color: #4796FF;
+
+		transition-property: color;
+		transition-duration: 0.3s;
+
+		cursor: pointer;
+	}
+
+	nav .open-nav {
+    	position: absolute;
+    	text-align: left;
+    	top: -3px;
+    	left: 20px;
+
+    	font-size: 30px;
+    	font-family: sans-serif;
+    	font-weight: normal;
+
+    	color: #ffffff;
+    	cursor: pointer;
+	}
+
+	nav .open-nav button {
+		position: relative;
+		top: 7px;
+
+    	font-family: sans-serif;
+    	font-weight: 550;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav {
+		height: 160px;
+
+		opacity: 0.8;
+	}
+
+	nav .document-nav { 
+		display: block; 
+		top: 0px;
+	}
+	
+	nav .open-nav {
+		position: relative;
+		top: 0px;
+
+		text-align: center;
+  }
+
+	nav .open-nav button {
+		font-size: 30px;
+
+		background: none;
+		color: #ffffff;
+  }
+
+	nav a { 
+		display: block; 
+
+		padding: 7px 0px;
+  }
+}

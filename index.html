@@ -1,81 +1,69 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
-  <head>
-    <!-- Заголовок и иконка -->
-    <title>Pypong - Переосмысление игры пинг-понг</title>
-    <link rel="icon" href="image item/icon.ico">
-    <!-- Установка кодировки -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Подключение файлов -->
-    <link rel="stylesheet" href="style sheet/index style.css">
-    <link rel="stylesheet" href="style sheet/style.css">
+<html lang="ru">
+	<head>
+		<title>Pypong - Переосмысление игры Пинг-Понг</title>
+		<link rel="icon" href="img/icon.ico">
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
-  	<script type="text/javascript" src="java script/navigation.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  </head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
+		<script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<!-- Микроразметка -->
+		<meta name="description" content="Новая игра пинг-понг">
+		<meta name="keywords" content="pypong, game, игра, пинг-понг, новая, переосмысление, пайпонг">
+
+	</head>
 <body>
-  <!-- Скрипт с плавным переходом по якорям -->
-  <script type="text/javascript">
-   $(document).ready(function(){
-      $(".document-nav").on("click","a", function (event) {
-          event.preventDefault();
-          var id  = $(this).attr('href'),
-              top = $(id).offset().top;
-          $('body,html').animate({scrollTop: top}, 400);
-      });
-  });
-  </script>
-  <!-- Скрипт с плавным переходом по якорям -->
+	<!--
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".document-nav").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 400);
+			});
+		});
+	</script>
+	-->
 
-  <!-- Навигационое поле -->
-  <nav class="nav">
-    <ul>
-      <div class="document-nav">
-        <li><a href="#Header">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="inGame.html">Об игре</a></li>
-        <li><a href="#Download">Скачать</a></li>
-      </div>
+	<nav class="nav">
+		<div class="document-nav">
+			<a href="#Header"><button>Главная</button></a>
+			<a href="news.html"><button>Новости</button></a>
+			<a href="inGame.html"><button>Об игре</button></a>
+			<a href="#Download"><button>Скачать</button></a>
+		</div>
 
-      <div class="open-nav">
-        <li id="li-open-nav">&#8801;</li>
-      </div>
-    </ul>
-  </nav>
-  <!-- Навигационое поле -->
+		<div class="open-nav">
+			<button id="button-open-nav">&#8801;</button>
+		</div>
+	</nav>
 
-  <!-- Header -->
-  <header id="Header">
-    <hgroup>
-      <h1><a href="index.html">Pypong</a></h1>
-      <h2>переосмысление игры пинг-понг</h2>
-    </hgroup>
-  </header>
-  <!-- Header -->
+	<header class="header" id="Header">
+		<hgroup>
 
-  <!-- Раздел с информацией -->
-  <section class="info-section">
-    <div class="info-game">
-      <h2>Новая игра Пинг-Понг</h2>
-      <p>Простая игра, в игру можно поиграть, что бы скоротать время. Отбивайте мяч ракеткой и собирайте очки, костомизируйте игру под свой вкус и просто играйте ! Также, вы можете следить за новостями и обновлениями игры.</p>
-    </div>
-  </section>
-  <!-- Раздел с информацией -->
+			<!-- Логотип -->
+			<a href="index.html">
+				<h1>Pypong</h1>
+				<img src="img/logo.png" alt="Логотип игры">
+			</a>
 
-  <!-- Разлел со скачиванием -->
-  <section class="download-section" id="Download">
+			<!-- Слоган -->
+			<h6>Переосмысление игры Пинг-Понг</h6>
 
-  </section>
-  <!-- Разлел со скачиванием -->
+		</hgroup>
 
-  <!-- Подвал -->
-  <footer>
-
-  </footer>
-  <!-- Подвал -->
-
+		<div class="download">
+			<a href="#Download" class="a-download"><button class="button-download">Скачать игру</button></a>
+		</div>
+	</header>
 </body>
 
 </html>
