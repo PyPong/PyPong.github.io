@@ -131,8 +131,8 @@ nav .open-nav button {
 	}
 
 	nav .open-nav button {
-		position: relative;
-		top: 7px;
+	position: relative;
+	top: 7px;
 
     	font-family: sans-serif;
     	font-weight: 550;
@@ -160,6 +160,7 @@ nav .open-nav button {
 
 	nav .open-nav button {
 		font-size: 30px;
+		top: 0px;
 
 		background: none;
 		color: #ffffff;
