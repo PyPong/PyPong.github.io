@@ -128,7 +128,7 @@ nav .open-nav button {
 
 @media screen and (max-width: 800px) {
 	nav {
-		height: 160px;
+		height: 180px;
 
 		opacity: 0.8;
 	}
@@ -142,7 +142,7 @@ nav .open-nav button {
 
 	nav .open-nav {
 		position: relative;
-		top: -4px;
+		top: 0px;
 
 		text-align: center;
   }
