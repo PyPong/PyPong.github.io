@@ -1,0 +1,104 @@
+body {
+	background: linear-gradient(#a3b0d1, #a3b0d1);
+}
+
+header {
+	position: relative;
+	height: 300px;
+	top: 0px;
+
+	overflow: hidden;
+
+	background: rgba(20, 20, 20, 0.4);
+
+}
+
+header hgroup{
+	width: auto;
+
+	text-align: center;
+	font-family: RobotoSlab;
+
+	color: #fff;
+}
+
+header hgroup h1{
+	position: relative;
+	top: 50px;
+
+	font-size: 60px;
+}
+
+header h6{
+	position: relative;
+	bottom: 20px;
+
+	font-size: 12px;
+}
+
+header hgroup a{
+	text-decoration: none;
+	color: #fff;
+}
+
+header button {
+	position: relative;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	padding: 10px 20px;
+	font-size: 17px;
+}
+
+/* стили для секции скачивания */
+
+
+
+@media screen and (min-width: 801px) {
+	header {
+		width: 80%;
+
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	header hgroup {
+		transform: translate(50px, 0);
+	}
+
+	header hgroup img {
+		width: 100px;
+		margin-top: -5px;
+		margin-left: -330px;
+
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		width: 100%;
+		left: 0;
+	}
+
+	header hgroup img {
+		display: none;
+	}
+
+
+	header hgroup h1 {
+		top: 70px;
+	}
+
+	header hgroup h6 {
+		top: 80px;
+	}
+
+	header .download_button_zone button {
+		top: 140px;
+	}
+}
