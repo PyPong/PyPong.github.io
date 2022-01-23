@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Pypong - Переосмысление игры Пинг-Понг</title>
+		<link rel="icon" href="img/icon.ico">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+		<script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/navigation.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<!-- Микроразметка -->
+		<meta name="description" content="Новая игра пинг-понг">
+		<meta name="keywords" content="pypong, game, игра, пинг-понг, новая, переосмысление, пайпонг">
+
+	</head>
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#document-nav").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 400);
+			});
+			$(".download").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 400);
+			});
+		});
+	</script>
+
+	<header class="header" id="header">
+		<hgroup>
+
+			<!-- Логотип -->
+			<a href="index.html">
+				<h1>Pypong</h1>
+				<img src="img/logo.png" alt="Логотип игры">
+			</a>
+
+			<!-- Слоган -->
+			<h6>Переосмысление игры Пинг-Понг</h6>
+
+		</hgroup>
+
+		<div class="download_button_zone">
+			<a href="#download_section"><button class="download_button button">Скачать игру</button></a>
+		</div>
+	</header>
+	
+
+</body>
+
+</html>
